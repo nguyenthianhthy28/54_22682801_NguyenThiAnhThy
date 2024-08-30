@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px auto;
+    }
+    body {
+        background-image: url();
+    }
+    .wrapper{
+        width: 1089px;
+        height: 860px;
+        background-color: antiquewhite;
+        border: 1px solid rgb(74, 102, 228);
+    }
+    .top-menu {
+        width: 1089px;
+        height: 860px;
+        background-color: bisque;
+    }
+    .header{
+        width: 1089px;
+        height: 150px;
+        background-color: rgb(194, 123, 52);
+        position:relative;
+       
+    }
+    .footer{
+        width: 1089px;
+        height: 150px;
+        background-color: rgb(134,130,127);  
+    }
+    .content{
+        width: 1089px;
+        height: 500px;
+        background-color: rgb(238,233,229);  
+    }
+    .menu-left{
+        width: 20%;
+        height: 500px;
+        background-color: rgb(214,127,192);  
+        float: left;
+    }
+    .content-left{
+        width: 45%;
+        height: 500px;
+        background-color: white;  
+        float: left;
+    }
+    .content-right{
+        width: 35%;
+        height: 500px;
+        background-color: rgb(216,124,134);  
+        float: left;
+    }
+    .menu li{
+            width: 140px;
+            height: 50px;
+            background-color: bisque;
+            text-indent: 20px;
+            border: 1px solid rgb(243,124,134);
+            border-radius: 10px;
+            line-height: 50px;
+            position: absolute;
+            list-style: none;
+        }
+
+        .menu li:hover{
+            background-color: blue;
+        }
+        .menu li:nth-child(5){
+            bottom: 5px;
+            right: 20px;
+        }
+        .menu li:nth-child(4){
+            bottom: 5px;
+            right: 170px;
+        }
+        .menu li:nth-child(3){
+            bottom: 5px;
+            right: 320px;
+        }
+        .menu li:nth-child(2){
+            bottom: 5px;
+            right: 470px;
+        }
+        .menu li:nth-child(1){
+            bottom: 5px;
+            right:620px;
+        }
+        li:hover>a{
+            color: yellow;
+        }
+        li a{
+            text-decoration: none;
+        }
+        .menu-doc-left li{
+            width: 200px;
+            height: 50px;
+            background-color: rgb(175,172,168);
+            text-indent: 20px;
+            border: 1px solid rgb(243,124,134);
+            border-radius: 10px;
+            line-height: 50px;
+            position: absolute;
+            list-style: none;
+        }    
+        .menu-doc-left li a{
+            text-decoration: none;
+        }    
+        .header h1{
+            top:10px;
+            left: 250px;
+            position: fixed;
+            color: aliceblue;
+            box-shadow: 3px 10px 5px red;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+        <img src="../img/background.jpg" alt="" srcset="" height="100%" width="100%">
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">HELP</a></li>
+            </ul>
+            <h1>KHOA CNTT</h1>
+        </div>
+        <div class="content">
+ 
+ 
+            <div class="menu-left">
+                <ul class="menu-doc-left">
+                    <li><a href="#">ITEM 1</a></li>
+                    <li><a href="#">ITEM 2</a></li>
+                    <li><a href="#">ITEM 3</a></li>
+                    <li><a href="#">ITEM 4</a></li>
+                    <li><a href="#">ITEM 5</a></li>
+                </ul>
+            </div>
+            <div class="content-left"></div>
+            <div class="content-right"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
